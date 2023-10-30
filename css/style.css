@@ -1,3 +1,16 @@
+/* custom properties */
+:root {
+    --med-blue: #2b315e;
+    --dark-blue: #101439;
+    --gold: #FFBC61;
+}
+
+
+
+
+
+
+
 /*BEGIN NORMALIZING RULES*/
 div {
     box-sizing: border-box;
@@ -28,7 +41,7 @@ h3 {
 }
 
 body {
-    background: var(--Blue--Med, #2A315F);
+    background: var(--med-blue);
     color: white;
     font-family: 'Open Sans', sans-serif;
 }
@@ -93,15 +106,19 @@ header {
     padding: 5px 20px;
     border-radius: 15px;
     display: inline-block;
+    transition: .5s;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .button-gold {
-    background: #FFB859;
+    background: var(--gold);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .button-gold:hover {
     background: #F3D9B6;
     color: #000;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.75);
 }
 
 .button-blue {
@@ -140,4 +157,8 @@ header {
 
 .primary-nav ul a.active {
     font-weight: bold;
+}
+
+.scooter {
+    transform: rotate(30deg);
 }
