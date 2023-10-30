@@ -1,0 +1,143 @@
+/*BEGIN NORMALIZING RULES*/
+div {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*END NORMALIZING RULES*/
+
+
+h3 {
+    color: var(--Med-Blue, #2B315E);
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+body {
+    background: var(--Blue--Med, #2A315F);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background: #585C7C;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pg-padding {
+    padding: 30px 50px;
+}
+
+
+.feature {
+    background-image: url('../images/space.jpg');
+    background-position: right;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    grid-gap: 50px;
+}
+
+.other-trips {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    align-items: center;
+}
+
+.other-trips>div:nth-child(3) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.other-trips>div:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+}
+
+.center-column {
+    grid-column: 2;
+}
+
+.gold-bkg {
+    background: #F3D9B5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+}
+
+.button {
+    color: white;
+    text-decoration: none;
+    background: #FFB859;
+    padding: 5px 20px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.button-gold {
+    background: #FFB859;
+}
+
+.button-gold:hover {
+    background: #F3D9B6;
+    color: #000;
+}
+
+.button-blue {
+    background: #595C7D;
+}
+
+.button-blue:hover {
+    background: #A8AAB5;
+    color: #000;
+}
+
+.primary-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.primary-nav ul li {
+    padding-left: 20px;
+}
+
+.primary-nav ul a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 0;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0);
+}
+
+.primary-nav ul a:hover,
+.primary-nav ul a.active {
+    border-bottom: 1px dotted white;
+}
+
+.primary-nav ul a.active {
+    font-weight: bold;
+}
